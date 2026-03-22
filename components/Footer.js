@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <img src="/logo.jpeg" alt="GoalKit" style={{ height: 60, width: 'auto', objectFit: 'contain', marginBottom: 16 }} />
+            <img src="/logo.png" alt="GoalKit" style={{ height: 60, width: 'auto', objectFit: 'contain', marginBottom: 16 }} />
             <p style={{ color: '#8a6060', fontSize: 14, lineHeight: 1.7 }}>{t.footer.tagline}</p>
           </div>
 

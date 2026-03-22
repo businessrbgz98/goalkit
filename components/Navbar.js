@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
           <img
-            src="/logo.jpeg"
+            src="/logo.png"
             alt="GoalKit"
             style={{ height: 56, width: 'auto', objectFit: 'contain' }}
           />
