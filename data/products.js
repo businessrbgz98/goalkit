@@ -1,332 +1,195 @@
+// =============================================
+// GOALKIT — Volledige productendatabase
+// Basis prijs: €20-25 | Naam+nummer: +€8
+// =============================================
+
+export const PERSONALIZATION_PRICE = 8.00;
+
 export const products = [
-  // === NATIONAL TEAMS ===
-  {
-    id: "bel-home-2024",
-    category: "national",
-    country: "Belgium",
-    flag: "🇧🇪",
-    type: "home",
-    name: { nl: "België Thuisshirt 2024", fr: "Maillot Domicile Belgique 2024", en: "Belgium Home Shirt 2024" },
-    description: {
-      nl: "Het officiële thuisshirt van de Rode Duivels.",
-      fr: "Le maillot officiel à domicile des Diables Rouges.",
-      en: "The official home shirt of the Red Devils."
-    },
-    price: 89.99,
-    colors: ["#CC0000", "#000000"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop",
-    badge: "bestseller",
-    stock: 42
-  },
-  {
-    id: "bel-away-2024",
-    category: "national",
-    country: "Belgium",
-    flag: "🇧🇪",
-    type: "away",
-    name: { nl: "België Uitshirt 2024", fr: "Maillot Extérieur Belgique 2024", en: "Belgium Away Shirt 2024" },
-    description: {
-      nl: "Het officiële uitshirt van de Rode Duivels.",
-      fr: "Le maillot officiel à l'extérieur des Diables Rouges.",
-      en: "The official away shirt of the Red Devils."
-    },
-    price: 84.99,
-    colors: ["#000000", "#CC0000"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 28
-  },
-  {
-    id: "fra-home-2024",
-    category: "national",
-    country: "France",
-    flag: "🇫🇷",
-    type: "home",
-    name: { nl: "Frankrijk Thuisshirt 2024", fr: "Maillot Domicile France 2024", en: "France Home Shirt 2024" },
-    description: {
-      nl: "Het iconische blauwe shirt van Les Bleus.",
-      fr: "Le mythique maillot bleu des Bleus.",
-      en: "The iconic blue shirt of Les Bleus."
-    },
-    price: 94.99,
-    colors: ["#002395", "#FFFFFF"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=500&fit=crop",
-    badge: "new",
-    stock: 55
-  },
-  {
-    id: "ned-home-2024",
-    category: "national",
-    country: "Netherlands",
-    flag: "🇳🇱",
-    type: "home",
-    name: { nl: "Nederland Thuisshirt 2024", fr: "Maillot Domicile Pays-Bas 2024", en: "Netherlands Home Shirt 2024" },
-    description: {
-      nl: "Het oranje thuisshirt van het Nederlands elftal.",
-      fr: "Le mythique maillot orange des Pays-Bas.",
-      en: "The iconic orange home shirt of the Netherlands."
-    },
-    price: 89.99,
-    colors: ["#FF6600", "#FFFFFF"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 37
-  },
-  {
-    id: "ger-home-2024",
-    category: "national",
-    country: "Germany",
-    flag: "🇩🇪",
-    type: "home",
-    name: { nl: "Duitsland Thuisshirt 2024", fr: "Maillot Domicile Allemagne 2024", en: "Germany Home Shirt 2024" },
-    description: {
-      nl: "Het klassieke witte shirt van Die Mannschaft.",
-      fr: "Le classique maillot blanc de Die Mannschaft.",
-      en: "The classic white shirt of Die Mannschaft."
-    },
-    price: 89.99,
-    colors: ["#FFFFFF", "#000000"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 44
-  },
-  {
-    id: "esp-home-2024",
-    category: "national",
-    country: "Spain",
-    flag: "🇪🇸",
-    type: "home",
-    name: { nl: "Spanje Thuisshirt 2024", fr: "Maillot Domicile Espagne 2024", en: "Spain Home Shirt 2024" },
-    description: {
-      nl: "Het rode thuisshirt van La Roja.",
-      fr: "Le maillot rouge de La Roja.",
-      en: "The red home shirt of La Roja."
-    },
-    price: 92.99,
-    colors: ["#AA151B", "#F1BF00"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400&h=500&fit=crop",
-    badge: "champion",
-    stock: 60
-  },
-  {
-    id: "eng-home-2024",
-    category: "national",
-    country: "England",
-    flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    type: "home",
-    name: { nl: "Engeland Thuisshirt 2024", fr: "Maillot Domicile Angleterre 2024", en: "England Home Shirt 2024" },
-    description: {
-      nl: "Het klassieke witte shirt van de Three Lions.",
-      fr: "Le classique maillot blanc des Three Lions.",
-      en: "The classic white shirt of the Three Lions."
-    },
-    price: 91.99,
-    colors: ["#FFFFFF", "#CC0000"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 50
-  },
-  {
-    id: "por-home-2024",
-    category: "national",
-    country: "Portugal",
-    flag: "🇵🇹",
-    type: "home",
-    name: { nl: "Portugal Thuisshirt 2024", fr: "Maillot Domicile Portugal 2024", en: "Portugal Home Shirt 2024" },
-    description: {
-      nl: "Het rode thuisshirt van Portugal.",
-      fr: "Le maillot rouge du Portugal.",
-      en: "The red home shirt of Portugal."
-    },
-    price: 87.99,
-    colors: ["#CC0000", "#006600"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 38
-  },
-  {
-    id: "ita-home-2024",
-    category: "national",
-    country: "Italy",
-    flag: "🇮🇹",
-    type: "home",
-    name: { nl: "Italië Thuisshirt 2024", fr: "Maillot Domicile Italie 2024", en: "Italy Home Shirt 2024" },
-    description: {
-      nl: "Het iconische blauwe shirt van Gli Azzurri.",
-      fr: "L'iconique maillot bleu des Azzurri.",
-      en: "The iconic blue shirt of Gli Azzurri."
-    },
-    price: 88.99,
-    colors: ["#003399", "#FFFFFF"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 32
-  },
-  // === CLUBS ===
-  {
-    id: "rma-home-2024",
-    category: "club",
-    country: "Spain",
-    flag: "🇪🇸",
-    club: "Real Madrid",
-    type: "home",
-    name: { nl: "Real Madrid Thuisshirt 2024/25", fr: "Maillot Domicile Real Madrid 2024/25", en: "Real Madrid Home Shirt 2024/25" },
-    description: {
-      nl: "Het witte thuisshirt van de Koninklijke.",
-      fr: "Le maillot blanc du Real Madrid.",
-      en: "The iconic white home shirt of Los Blancos."
-    },
-    price: 99.99,
-    colors: ["#FFFFFF", "#FFD700"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=500&fit=crop",
-    badge: "bestseller",
-    stock: 75
-  },
-  {
-    id: "fcb-home-2024",
-    category: "club",
-    country: "Spain",
-    flag: "🇪🇸",
-    club: "FC Barcelona",
-    type: "home",
-    name: { nl: "FC Barcelona Thuisshirt 2024/25", fr: "Maillot Domicile FC Barcelone 2024/25", en: "FC Barcelona Home Shirt 2024/25" },
-    description: {
-      nl: "Het blaugrana thuisshirt van Barça.",
-      fr: "Le maillot blaugrana du Barça.",
-      en: "The iconic blaugrana home shirt of Barça."
-    },
-    price: 99.99,
-    colors: ["#A50044", "#004D98"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 65
-  },
-  {
-    id: "mci-home-2024",
-    category: "club",
-    country: "England",
-    flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    club: "Manchester City",
-    type: "home",
-    name: { nl: "Manchester City Thuisshirt 2024/25", fr: "Maillot Domicile Manchester City 2024/25", en: "Manchester City Home Shirt 2024/25" },
-    description: {
-      nl: "Het lichtblauwe thuisshirt van The Citizens.",
-      fr: "Le maillot bleu ciel de Manchester City.",
-      en: "The sky blue home shirt of The Citizens."
-    },
-    price: 97.99,
-    colors: ["#6CABDD", "#FFFFFF"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 48
-  },
-  {
-    id: "bmu-home-2024",
-    category: "club",
-    country: "Germany",
-    flag: "🇩🇪",
-    club: "Bayern München",
-    type: "home",
-    name: { nl: "Bayern München Thuisshirt 2024/25", fr: "Maillot Domicile Bayern Munich 2024/25", en: "Bayern München Home Shirt 2024/25" },
-    description: {
-      nl: "Het rode thuisshirt van Bayern München.",
-      fr: "Le maillot rouge du Bayern Munich.",
-      en: "The classic red home shirt of Bayern München."
-    },
-    price: 95.99,
-    colors: ["#DC052D", "#FFFFFF"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=500&fit=crop",
-    badge: "new",
-    stock: 53
-  },
-  {
-    id: "jve-home-2024",
-    category: "club",
-    country: "Italy",
-    flag: "🇮🇹",
-    club: "Juventus",
-    type: "home",
-    name: { nl: "Juventus Thuisshirt 2024/25", fr: "Maillot Domicile Juventus 2024/25", en: "Juventus Home Shirt 2024/25" },
-    description: {
-      nl: "Het zwart-witte thuisshirt van La Vecchia Signora.",
-      fr: "Le maillot noir et blanc de la Vieille Dame.",
-      en: "The iconic black and white shirt of La Vecchia Signora."
-    },
-    price: 93.99,
-    colors: ["#000000", "#FFFFFF"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1552318965-6e6be7484ada?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 40
-  },
-  {
-    id: "psg-home-2024",
-    category: "club",
-    country: "France",
-    flag: "🇫🇷",
-    club: "Paris Saint-Germain",
-    type: "home",
-    name: { nl: "PSG Thuisshirt 2024/25", fr: "Maillot Domicile PSG 2024/25", en: "PSG Home Shirt 2024/25" },
-    description: {
-      nl: "Het donkerblauwe thuisshirt van Paris Saint-Germain.",
-      fr: "Le maillot bleu marine du Paris Saint-Germain.",
-      en: "The dark blue home shirt of Paris Saint-Germain."
-    },
-    price: 98.99,
-    colors: ["#004170", "#DA291C"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 58
-  },
-  {
-    id: "and-home-2024",
-    category: "club",
-    country: "Belgium",
-    flag: "🇧🇪",
-    club: "RSC Anderlecht",
-    type: "home",
-    name: { nl: "Anderlecht Thuisshirt 2024/25", fr: "Maillot Domicile Anderlecht 2024/25", en: "Anderlecht Home Shirt 2024/25" },
-    description: {
-      nl: "Het paars-witte thuisshirt van de Mauves.",
-      fr: "Le maillot mauve et blanc des Mauves.",
-      en: "The purple and white home shirt of the Mauves."
-    },
-    price: 79.99,
-    colors: ["#6C1F7E", "#FFFFFF"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    image: "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop",
-    badge: null,
-    stock: 30
-  }
+
+  // ==========================================
+  // NATIONALE PLOEGEN
+  // ==========================================
+
+  // 🇧🇪 BELGIË
+  { id:'bel-home', category:'national', country:'Belgium', flag:'🇧🇪', type:'home', name:{nl:'België Thuisshirt',fr:'Maillot Domicile Belgique',en:'Belgium Home Shirt'}, desc:{nl:'Het officiële thuisshirt van de Rode Duivels.',fr:'Le maillot officiel à domicile des Diables Rouges.',en:'The official home shirt of the Red Devils.'}, price:22.99, colors:['#CC0000','#000000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'bel-away', category:'national', country:'Belgium', flag:'🇧🇪', type:'away', name:{nl:'België Uitshirt',fr:'Maillot Extérieur Belgique',en:'Belgium Away Shirt'}, desc:{nl:'Het officiële uitshirt van de Rode Duivels.',fr:'Le maillot extérieur des Diables Rouges.',en:'The official away shirt of the Red Devils.'}, price:21.99, colors:['#000000','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'bel-third', category:'national', country:'Belgium', flag:'🇧🇪', type:'third', name:{nl:'België Derde Shirt',fr:'Maillot Third Belgique',en:'Belgium Third Shirt'}, desc:{nl:'Het derde shirt van de Rode Duivels.',fr:'Le troisième maillot des Diables Rouges.',en:'The third shirt of the Red Devils.'}, price:20.99, colors:['#003366','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'bel-concept', category:'national', country:'Belgium', flag:'🇧🇪', type:'concept', name:{nl:'België Concept Shirt',fr:'Maillot Concept Belgique',en:'Belgium Concept Shirt'}, desc:{nl:'Exclusief conceptshirt geïnspireerd op de Belgische driekleur.',fr:'Maillot concept exclusif inspiré du drapeau belge.',en:'Exclusive concept shirt inspired by the Belgian tricolor.'}, price:24.99, colors:['#000000','#FFCC00','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1552318965-6e6be7484ada?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇫🇷 FRANKRIJK
+  { id:'fra-home', category:'national', country:'France', flag:'🇫🇷', type:'home', name:{nl:'Frankrijk Thuisshirt',fr:'Maillot Domicile France',en:'France Home Shirt'}, desc:{nl:'Het iconische blauwe shirt van Les Bleus.',fr:'Le mythique maillot bleu des Bleus.',en:'The iconic blue shirt of Les Bleus.'}, price:22.99, colors:['#002395','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'fra-away', category:'national', country:'France', flag:'🇫🇷', type:'away', name:{nl:'Frankrijk Uitshirt',fr:'Maillot Extérieur France',en:'France Away Shirt'}, desc:{nl:'Het witte uitshirt van Les Bleus.',fr:'Le maillot blanc extérieur des Bleus.',en:'The white away shirt of Les Bleus.'}, price:21.99, colors:['#FFFFFF','#002395'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'fra-third', category:'national', country:'France', flag:'🇫🇷', type:'third', name:{nl:'Frankrijk Derde Shirt',fr:'Maillot Third France',en:'France Third Shirt'}, desc:{nl:'Het rode derde shirt van Les Bleus.',fr:'Le troisième maillot rouge des Bleus.',en:'The red third shirt of Les Bleus.'}, price:20.99, colors:['#CC0000','#002395'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'fra-concept', category:'national', country:'France', flag:'🇫🇷', type:'concept', name:{nl:'Frankrijk Concept Shirt',fr:'Maillot Concept France',en:'France Concept Shirt'}, desc:{nl:'Exclusief conceptshirt in de kleuren van de tricolore.',fr:'Maillot concept aux couleurs du drapeau tricolore.',en:'Exclusive concept shirt in tricolore colors.'}, price:24.99, colors:['#002395','#FFFFFF','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇳🇱 NEDERLAND
+  { id:'ned-home', category:'national', country:'Netherlands', flag:'🇳🇱', type:'home', name:{nl:'Nederland Thuisshirt',fr:'Maillot Domicile Pays-Bas',en:'Netherlands Home Shirt'}, desc:{nl:'Het oranje thuisshirt van het Nederlands elftal.',fr:'Le mythique maillot orange des Pays-Bas.',en:'The iconic orange shirt of the Netherlands.'}, price:22.99, colors:['#FF6600','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ned-away', category:'national', country:'Netherlands', flag:'🇳🇱', type:'away', name:{nl:'Nederland Uitshirt',fr:'Maillot Extérieur Pays-Bas',en:'Netherlands Away Shirt'}, desc:{nl:'Het witte uitshirt van Oranje.',fr:'Le maillot extérieur blanc des Pays-Bas.',en:'The white away shirt of the Netherlands.'}, price:21.99, colors:['#FFFFFF','#FF6600'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ned-third', category:'national', country:'Netherlands', flag:'🇳🇱', type:'third', name:{nl:'Nederland Derde Shirt',fr:'Maillot Third Pays-Bas',en:'Netherlands Third Shirt'}, desc:{nl:'Het blauwe derde shirt van Oranje.',fr:'Le troisième maillot bleu des Pays-Bas.',en:'The blue third shirt of the Netherlands.'}, price:20.99, colors:['#003DA5','#FF6600'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ned-concept', category:'national', country:'Netherlands', flag:'🇳🇱', type:'concept', name:{nl:'Nederland Concept Shirt',fr:'Maillot Concept Pays-Bas',en:'Netherlands Concept Shirt'}, desc:{nl:'Conceptshirt met iconische oranje kleur.',fr:'Maillot concept orange iconique.',en:'Concept shirt with iconic orange design.'}, price:24.99, colors:['#FF6600','#003DA5'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇩🇪 DUITSLAND
+  { id:'ger-home', category:'national', country:'Germany', flag:'🇩🇪', type:'home', name:{nl:'Duitsland Thuisshirt',fr:'Maillot Domicile Allemagne',en:'Germany Home Shirt'}, desc:{nl:'Het klassieke witte shirt van Die Mannschaft.',fr:'Le classique maillot blanc de Die Mannschaft.',en:'The classic white shirt of Die Mannschaft.'}, price:22.99, colors:['#FFFFFF','#000000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ger-away', category:'national', country:'Germany', flag:'🇩🇪', type:'away', name:{nl:'Duitsland Uitshirt',fr:'Maillot Extérieur Allemagne',en:'Germany Away Shirt'}, desc:{nl:'Het zwarte uitshirt van Die Mannschaft.',fr:'Le maillot extérieur noir de Die Mannschaft.',en:'The black away shirt of Die Mannschaft.'}, price:21.99, colors:['#000000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ger-third', category:'national', country:'Germany', flag:'🇩🇪', type:'third', name:{nl:'Duitsland Derde Shirt',fr:'Maillot Third Allemagne',en:'Germany Third Shirt'}, desc:{nl:'Het rode derde shirt van Die Mannschaft.',fr:'Le troisième maillot rouge de Die Mannschaft.',en:'The red third shirt of Die Mannschaft.'}, price:20.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ger-concept', category:'national', country:'Germany', flag:'🇩🇪', type:'concept', name:{nl:'Duitsland Concept Shirt',fr:'Maillot Concept Allemagne',en:'Germany Concept Shirt'}, desc:{nl:'Conceptshirt in de kleuren van de Duitse vlag.',fr:'Maillot concept aux couleurs du drapeau allemand.',en:'Concept shirt in German flag colors.'}, price:24.99, colors:['#000000','#CC0000','#FFCC00'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇪🇸 SPANJE
+  { id:'esp-home', category:'national', country:'Spain', flag:'🇪🇸', type:'home', name:{nl:'Spanje Thuisshirt',fr:'Maillot Domicile Espagne',en:'Spain Home Shirt'}, desc:{nl:'Het rode thuisshirt van La Roja.',fr:'Le maillot rouge de La Roja.',en:'The red home shirt of La Roja.'}, price:22.99, colors:['#AA151B','#F1BF00'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400&h=500&fit=crop', badge:'champion', stock:99 },
+  { id:'esp-away', category:'national', country:'Spain', flag:'🇪🇸', type:'away', name:{nl:'Spanje Uitshirt',fr:'Maillot Extérieur Espagne',en:'Spain Away Shirt'}, desc:{nl:'Het blauwe uitshirt van La Roja.',fr:'Le maillot extérieur bleu de La Roja.',en:'The blue away shirt of La Roja.'}, price:21.99, colors:['#003DA5','#AA151B'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'esp-third', category:'national', country:'Spain', flag:'🇪🇸', type:'third', name:{nl:'Spanje Derde Shirt',fr:'Maillot Third Espagne',en:'Spain Third Shirt'}, desc:{nl:'Het groene derde shirt van La Roja.',fr:'Le troisième maillot vert de La Roja.',en:'The green third shirt of La Roja.'}, price:20.99, colors:['#006600','#AA151B'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'esp-concept', category:'national', country:'Spain', flag:'🇪🇸', type:'concept', name:{nl:'Spanje Concept Shirt',fr:'Maillot Concept Espagne',en:'Spain Concept Shirt'}, desc:{nl:'Exclusief Spaans conceptshirt.',fr:'Maillot concept espagnol exclusif.',en:'Exclusive Spanish concept shirt.'}, price:24.99, colors:['#AA151B','#F1BF00'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENGELAND
+  { id:'eng-home', category:'national', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', type:'home', name:{nl:'Engeland Thuisshirt',fr:'Maillot Domicile Angleterre',en:'England Home Shirt'}, desc:{nl:'Het klassieke witte shirt van de Three Lions.',fr:'Le classique maillot blanc des Three Lions.',en:'The classic white shirt of the Three Lions.'}, price:22.99, colors:['#FFFFFF','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'eng-away', category:'national', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', type:'away', name:{nl:'Engeland Uitshirt',fr:'Maillot Extérieur Angleterre',en:'England Away Shirt'}, desc:{nl:'Het donkerblauwe uitshirt van de Three Lions.',fr:'Le maillot extérieur bleu foncé des Three Lions.',en:'The dark blue away shirt of the Three Lions.'}, price:21.99, colors:['#001D5B','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'eng-third', category:'national', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', type:'third', name:{nl:'Engeland Derde Shirt',fr:'Maillot Third Angleterre',en:'England Third Shirt'}, desc:{nl:'Het paarse derde shirt van Engeland.',fr:'Le troisième maillot violet de l\'Angleterre.',en:'The purple third shirt of England.'}, price:20.99, colors:['#660099','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'eng-concept', category:'national', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', type:'concept', name:{nl:'Engeland Concept Shirt',fr:'Maillot Concept Angleterre',en:'England Concept Shirt'}, desc:{nl:'Retro-geïnspireerd Engeland conceptshirt.',fr:'Maillot concept rétro de l\'Angleterre.',en:'Retro-inspired England concept shirt.'}, price:24.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇵🇹 PORTUGAL
+  { id:'por-home', category:'national', country:'Portugal', flag:'🇵🇹', type:'home', name:{nl:'Portugal Thuisshirt',fr:'Maillot Domicile Portugal',en:'Portugal Home Shirt'}, desc:{nl:'Het rode thuisshirt van Portugal.',fr:'Le maillot rouge du Portugal.',en:'The red home shirt of Portugal.'}, price:22.99, colors:['#CC0000','#006600'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'por-away', category:'national', country:'Portugal', flag:'🇵🇹', type:'away', name:{nl:'Portugal Uitshirt',fr:'Maillot Extérieur Portugal',en:'Portugal Away Shirt'}, desc:{nl:'Het witte uitshirt van Portugal.',fr:'Le maillot extérieur blanc du Portugal.',en:'The white away shirt of Portugal.'}, price:21.99, colors:['#FFFFFF','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'por-third', category:'national', country:'Portugal', flag:'🇵🇹', type:'third', name:{nl:'Portugal Derde Shirt',fr:'Maillot Third Portugal',en:'Portugal Third Shirt'}, desc:{nl:'Het zwarte derde shirt van Portugal.',fr:'Le troisième maillot noir du Portugal.',en:'The black third shirt of Portugal.'}, price:20.99, colors:['#000000','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'por-concept', category:'national', country:'Portugal', flag:'🇵🇹', type:'concept', name:{nl:'Portugal Concept Shirt',fr:'Maillot Concept Portugal',en:'Portugal Concept Shirt'}, desc:{nl:'Conceptshirt geïnspireerd op de Portugese cultuur.',fr:'Maillot concept inspiré de la culture portugaise.',en:'Concept shirt inspired by Portuguese culture.'}, price:24.99, colors:['#CC0000','#006600'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇮🇹 ITALIË
+  { id:'ita-home', category:'national', country:'Italy', flag:'🇮🇹', type:'home', name:{nl:'Italië Thuisshirt',fr:'Maillot Domicile Italie',en:'Italy Home Shirt'}, desc:{nl:'Het iconische blauwe shirt van Gli Azzurri.',fr:'L\'iconique maillot bleu des Azzurri.',en:'The iconic blue shirt of Gli Azzurri.'}, price:22.99, colors:['#003399','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ita-away', category:'national', country:'Italy', flag:'🇮🇹', type:'away', name:{nl:'Italië Uitshirt',fr:'Maillot Extérieur Italie',en:'Italy Away Shirt'}, desc:{nl:'Het witte uitshirt van Gli Azzurri.',fr:'Le maillot extérieur blanc des Azzurri.',en:'The white away shirt of Gli Azzurri.'}, price:21.99, colors:['#FFFFFF','#003399'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ita-third', category:'national', country:'Italy', flag:'🇮🇹', type:'third', name:{nl:'Italië Derde Shirt',fr:'Maillot Third Italie',en:'Italy Third Shirt'}, desc:{nl:'Het groene derde shirt van Italië.',fr:'Le troisième maillot vert de l\'Italie.',en:'The green third shirt of Italy.'}, price:20.99, colors:['#006600','#003399'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ita-concept', category:'national', country:'Italy', flag:'🇮🇹', type:'concept', name:{nl:'Italië Concept Shirt',fr:'Maillot Concept Italie',en:'Italy Concept Shirt'}, desc:{nl:'Retro Azzurri conceptshirt.',fr:'Maillot concept Azzurri rétro.',en:'Retro Azzurri concept shirt.'}, price:24.99, colors:['#003399','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇧🇷 BRAZILIË
+  { id:'bra-home', category:'national', country:'Brazil', flag:'🇧🇷', type:'home', name:{nl:'Brazilië Thuisshirt',fr:'Maillot Domicile Brésil',en:'Brazil Home Shirt'}, desc:{nl:'Het iconische geel-groene shirt van de Seleção.',fr:'Le mythique maillot jaune-vert de la Seleção.',en:'The iconic yellow-green shirt of the Seleção.'}, price:22.99, colors:['#FFCC00','#006600'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'bra-away', category:'national', country:'Brazil', flag:'🇧🇷', type:'away', name:{nl:'Brazilië Uitshirt',fr:'Maillot Extérieur Brésil',en:'Brazil Away Shirt'}, desc:{nl:'Het blauwe uitshirt van de Seleção.',fr:'Le maillot extérieur bleu de la Seleção.',en:'The blue away shirt of the Seleção.'}, price:21.99, colors:['#003DA5','#FFCC00'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'bra-third', category:'national', country:'Brazil', flag:'🇧🇷', type:'third', name:{nl:'Brazilië Derde Shirt',fr:'Maillot Third Brésil',en:'Brazil Third Shirt'}, desc:{nl:'Het witte derde shirt van Brazilië.',fr:'Le troisième maillot blanc du Brésil.',en:'The white third shirt of Brazil.'}, price:20.99, colors:['#FFFFFF','#FFCC00'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'bra-concept', category:'national', country:'Brazil', flag:'🇧🇷', type:'concept', name:{nl:'Brazilië Concept Shirt',fr:'Maillot Concept Brésil',en:'Brazil Concept Shirt'}, desc:{nl:'Samba-geïnspireerd Brazilië conceptshirt.',fr:'Maillot concept samba du Brésil.',en:'Samba-inspired Brazil concept shirt.'}, price:24.99, colors:['#FFCC00','#006600','#003DA5'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // 🇦🇷 ARGENTINIË
+  { id:'arg-home', category:'national', country:'Argentina', flag:'🇦🇷', type:'home', name:{nl:'Argentinië Thuisshirt',fr:'Maillot Domicile Argentine',en:'Argentina Home Shirt'}, desc:{nl:'Het lichtblauw-witte shirt van de Albiceleste.',fr:'Le maillot bleu ciel et blanc de l\'Albiceleste.',en:'The light blue and white shirt of the Albiceleste.'}, price:22.99, colors:['#74ACDF','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:'champion', stock:99 },
+  { id:'arg-away', category:'national', country:'Argentina', flag:'🇦🇷', type:'away', name:{nl:'Argentinië Uitshirt',fr:'Maillot Extérieur Argentine',en:'Argentina Away Shirt'}, desc:{nl:'Het donkerblauwe uitshirt van de Albiceleste.',fr:'Le maillot extérieur bleu foncé de l\'Albiceleste.',en:'The dark blue away shirt of the Albiceleste.'}, price:21.99, colors:['#003DA5','#74ACDF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'arg-third', category:'national', country:'Argentina', flag:'🇦🇷', type:'third', name:{nl:'Argentinië Derde Shirt',fr:'Maillot Third Argentine',en:'Argentina Third Shirt'}, desc:{nl:'Het paarse derde shirt van Argentinië.',fr:'Le troisième maillot violet de l\'Argentine.',en:'The purple third shirt of Argentina.'}, price:20.99, colors:['#660099','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'arg-concept', category:'national', country:'Argentina', flag:'🇦🇷', type:'concept', name:{nl:'Argentinië Concept Shirt',fr:'Maillot Concept Argentine',en:'Argentina Concept Shirt'}, desc:{nl:'Exclusief Argentinië conceptshirt.',fr:'Maillot concept argentin exclusif.',en:'Exclusive Argentina concept shirt.'}, price:24.99, colors:['#74ACDF','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=500&fit=crop', badge:'new', stock:99 },
+
+  // ==========================================
+  // CLUBS — JUPILER PRO LEAGUE 🇧🇪
+  // ==========================================
+  { id:'and-home', category:'club', country:'Belgium', flag:'🇧🇪', club:'RSC Anderlecht', league:'Jupiler Pro League', type:'home', name:{nl:'Anderlecht Thuisshirt',fr:'Maillot Domicile Anderlecht',en:'Anderlecht Home Shirt'}, desc:{nl:'Het paars-witte thuisshirt van de Mauves.',fr:'Le maillot mauve et blanc des Mauves.',en:'The purple and white home shirt of the Mauves.'}, price:22.99, colors:['#6C1F7E','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1552318965-6e6be7484ada?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'and-away', category:'club', country:'Belgium', flag:'🇧🇪', club:'RSC Anderlecht', league:'Jupiler Pro League', type:'away', name:{nl:'Anderlecht Uitshirt',fr:'Maillot Extérieur Anderlecht',en:'Anderlecht Away Shirt'}, desc:{nl:'Het uitshirt van RSC Anderlecht.',fr:'Le maillot extérieur d\'Anderlecht.',en:'The away shirt of RSC Anderlecht.'}, price:21.99, colors:['#FFFFFF','#6C1F7E'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'clu-home', category:'club', country:'Belgium', flag:'🇧🇪', club:'Club Brugge', league:'Jupiler Pro League', type:'home', name:{nl:'Club Brugge Thuisshirt',fr:'Maillot Domicile Club Bruges',en:'Club Brugge Home Shirt'}, desc:{nl:'Het zwart-blauw thuisshirt van Club Brugge.',fr:'Le maillot noir et bleu du Club Bruges.',en:'The black and blue home shirt of Club Brugge.'}, price:22.99, colors:['#000000','#003DA5'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'clu-away', category:'club', country:'Belgium', flag:'🇧🇪', club:'Club Brugge', league:'Jupiler Pro League', type:'away', name:{nl:'Club Brugge Uitshirt',fr:'Maillot Extérieur Club Bruges',en:'Club Brugge Away Shirt'}, desc:{nl:'Het uitshirt van Club Brugge.',fr:'Le maillot extérieur du Club Bruges.',en:'The away shirt of Club Brugge.'}, price:21.99, colors:['#FFFFFF','#000000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'sta-home', category:'club', country:'Belgium', flag:'🇧🇪', club:'Standard Liège', league:'Jupiler Pro League', type:'home', name:{nl:'Standard Luik Thuisshirt',fr:'Maillot Domicile Standard de Liège',en:'Standard Liège Home Shirt'}, desc:{nl:'Het rood-witte thuisshirt van de Rouches.',fr:'Le maillot rouge et blanc des Rouches.',en:'The red and white home shirt of the Rouches.'}, price:22.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — PREMIER LEAGUE 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+  // ==========================================
+  { id:'mci-home', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Manchester City', league:'Premier League', type:'home', name:{nl:'Manchester City Thuisshirt',fr:'Maillot Domicile Manchester City',en:'Manchester City Home Shirt'}, desc:{nl:'Het lichtblauwe thuisshirt van The Citizens.',fr:'Le maillot bleu ciel de Manchester City.',en:'The sky blue home shirt of The Citizens.'}, price:22.99, colors:['#6CABDD','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'mci-away', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Manchester City', league:'Premier League', type:'away', name:{nl:'Manchester City Uitshirt',fr:'Maillot Extérieur Manchester City',en:'Manchester City Away Shirt'}, desc:{nl:'Het uitshirt van Manchester City.',fr:'Le maillot extérieur de Manchester City.',en:'The away shirt of Manchester City.'}, price:21.99, colors:['#FFFFFF','#6CABDD'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'ars-home', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Arsenal', league:'Premier League', type:'home', name:{nl:'Arsenal Thuisshirt',fr:'Maillot Domicile Arsenal',en:'Arsenal Home Shirt'}, desc:{nl:'Het rode thuisshirt van The Gunners.',fr:'Le maillot rouge des Gunners.',en:'The red home shirt of The Gunners.'}, price:22.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'ars-away', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Arsenal', league:'Premier League', type:'away', name:{nl:'Arsenal Uitshirt',fr:'Maillot Extérieur Arsenal',en:'Arsenal Away Shirt'}, desc:{nl:'Het uitshirt van Arsenal.',fr:'Le maillot extérieur d\'Arsenal.',en:'The away shirt of Arsenal.'}, price:21.99, colors:['#FFFFFF','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'liv-home', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Liverpool', league:'Premier League', type:'home', name:{nl:'Liverpool Thuisshirt',fr:'Maillot Domicile Liverpool',en:'Liverpool Home Shirt'}, desc:{nl:'Het rode thuisshirt van The Reds.',fr:'Le maillot rouge des Reds.',en:'The red home shirt of The Reds.'}, price:22.99, colors:['#CC0000','#FFCC00'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'mun-home', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Manchester United', league:'Premier League', type:'home', name:{nl:'Manchester United Thuisshirt',fr:'Maillot Domicile Manchester United',en:'Manchester United Home Shirt'}, desc:{nl:'Het rode thuisshirt van The Red Devils.',fr:'Le maillot rouge des Red Devils.',en:'The red home shirt of The Red Devils.'}, price:22.99, colors:['#CC0000','#FFD700'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'che-home', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Chelsea', league:'Premier League', type:'home', name:{nl:'Chelsea Thuisshirt',fr:'Maillot Domicile Chelsea',en:'Chelsea Home Shirt'}, desc:{nl:'Het blauwe thuisshirt van The Blues.',fr:'Le maillot bleu des Blues.',en:'The blue home shirt of The Blues.'}, price:22.99, colors:['#034694','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'tot-home', category:'club', country:'England', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', club:'Tottenham Hotspur', league:'Premier League', type:'home', name:{nl:'Tottenham Thuisshirt',fr:'Maillot Domicile Tottenham',en:'Tottenham Home Shirt'}, desc:{nl:'Het witte thuisshirt van The Spurs.',fr:'Le maillot blanc des Spurs.',en:'The white home shirt of The Spurs.'}, price:22.99, colors:['#FFFFFF','#132257'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — LA LIGA 🇪🇸
+  // ==========================================
+  { id:'rma-home', category:'club', country:'Spain', flag:'🇪🇸', club:'Real Madrid', league:'La Liga', type:'home', name:{nl:'Real Madrid Thuisshirt',fr:'Maillot Domicile Real Madrid',en:'Real Madrid Home Shirt'}, desc:{nl:'Het witte thuisshirt van Los Blancos.',fr:'Le maillot blanc du Real Madrid.',en:'The iconic white shirt of Los Blancos.'}, price:22.99, colors:['#FFFFFF','#FFD700'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'rma-away', category:'club', country:'Spain', flag:'🇪🇸', club:'Real Madrid', league:'La Liga', type:'away', name:{nl:'Real Madrid Uitshirt',fr:'Maillot Extérieur Real Madrid',en:'Real Madrid Away Shirt'}, desc:{nl:'Het uitshirt van Real Madrid.',fr:'Le maillot extérieur du Real Madrid.',en:'The away shirt of Real Madrid.'}, price:21.99, colors:['#800080','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'fcb-home', category:'club', country:'Spain', flag:'🇪🇸', club:'FC Barcelona', league:'La Liga', type:'home', name:{nl:'FC Barcelona Thuisshirt',fr:'Maillot Domicile FC Barcelone',en:'FC Barcelona Home Shirt'}, desc:{nl:'Het blaugrana thuisshirt van Barça.',fr:'Le maillot blaugrana du Barça.',en:'The iconic blaugrana shirt of Barça.'}, price:22.99, colors:['#A50044','#004D98'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'atm-home', category:'club', country:'Spain', flag:'🇪🇸', club:'Atlético Madrid', league:'La Liga', type:'home', name:{nl:'Atlético Madrid Thuisshirt',fr:'Maillot Domicile Atlético Madrid',en:'Atlético Madrid Home Shirt'}, desc:{nl:'Het rood-witte thuisshirt van Los Colchoneros.',fr:'Le maillot rouge et blanc des Colchoneros.',en:'The red and white shirt of Los Colchoneros.'}, price:22.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — BUNDESLIGA 🇩🇪
+  // ==========================================
+  { id:'bmu-home', category:'club', country:'Germany', flag:'🇩🇪', club:'Bayern München', league:'Bundesliga', type:'home', name:{nl:'Bayern München Thuisshirt',fr:'Maillot Domicile Bayern Munich',en:'Bayern München Home Shirt'}, desc:{nl:'Het rode thuisshirt van Bayern München.',fr:'Le maillot rouge du Bayern Munich.',en:'The classic red shirt of Bayern München.'}, price:22.99, colors:['#DC052D','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1552318965-6e6be7484ada?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'bmu-away', category:'club', country:'Germany', flag:'🇩🇪', club:'Bayern München', league:'Bundesliga', type:'away', name:{nl:'Bayern München Uitshirt',fr:'Maillot Extérieur Bayern Munich',en:'Bayern München Away Shirt'}, desc:{nl:'Het uitshirt van Bayern München.',fr:'Le maillot extérieur du Bayern Munich.',en:'The away shirt of Bayern München.'}, price:21.99, colors:['#FFFFFF','#DC052D'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'bvb-home', category:'club', country:'Germany', flag:'🇩🇪', club:'Borussia Dortmund', league:'Bundesliga', type:'home', name:{nl:'Borussia Dortmund Thuisshirt',fr:'Maillot Domicile Borussia Dortmund',en:'Borussia Dortmund Home Shirt'}, desc:{nl:'Het geel-zwarte thuisshirt van BVB.',fr:'Le maillot jaune et noir du BVB.',en:'The yellow and black shirt of BVB.'}, price:22.99, colors:['#FFD700','#000000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — SERIE A 🇮🇹
+  // ==========================================
+  { id:'jve-home', category:'club', country:'Italy', flag:'🇮🇹', club:'Juventus', league:'Serie A', type:'home', name:{nl:'Juventus Thuisshirt',fr:'Maillot Domicile Juventus',en:'Juventus Home Shirt'}, desc:{nl:'Het zwart-witte shirt van La Vecchia Signora.',fr:'Le maillot noir et blanc de la Vieille Dame.',en:'The iconic black and white shirt of Juventus.'}, price:22.99, colors:['#000000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'acm-home', category:'club', country:'Italy', flag:'🇮🇹', club:'AC Milan', league:'Serie A', type:'home', name:{nl:'AC Milan Thuisshirt',fr:'Maillot Domicile AC Milan',en:'AC Milan Home Shirt'}, desc:{nl:'Het rood-zwarte thuisshirt van de Rossoneri.',fr:'Le maillot rouge et noir des Rossoneri.',en:'The red and black shirt of the Rossoneri.'}, price:22.99, colors:['#CC0000','#000000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'int-home', category:'club', country:'Italy', flag:'🇮🇹', club:'Inter Milan', league:'Serie A', type:'home', name:{nl:'Inter Milan Thuisshirt',fr:'Maillot Domicile Inter Milan',en:'Inter Milan Home Shirt'}, desc:{nl:'Het zwart-blauwe shirt van de Nerazzurri.',fr:'Le maillot noir et bleu des Nerazzurri.',en:'The black and blue shirt of the Nerazzurri.'}, price:22.99, colors:['#000000','#003DA5'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — LIGUE 1 🇫🇷
+  // ==========================================
+  { id:'psg-home', category:'club', country:'France', flag:'🇫🇷', club:'Paris Saint-Germain', league:'Ligue 1', type:'home', name:{nl:'PSG Thuisshirt',fr:'Maillot Domicile PSG',en:'PSG Home Shirt'}, desc:{nl:'Het donkerblauwe shirt van Paris Saint-Germain.',fr:'Le maillot bleu marine du PSG.',en:'The dark blue shirt of Paris Saint-Germain.'}, price:22.99, colors:['#004170','#DA291C'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'psg-away', category:'club', country:'France', flag:'🇫🇷', club:'Paris Saint-Germain', league:'Ligue 1', type:'away', name:{nl:'PSG Uitshirt',fr:'Maillot Extérieur PSG',en:'PSG Away Shirt'}, desc:{nl:'Het uitshirt van PSG.',fr:'Le maillot extérieur du PSG.',en:'The away shirt of PSG.'}, price:21.99, colors:['#FFFFFF','#004170'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'oly-home', category:'club', country:'France', flag:'🇫🇷', club:'Olympique Marseille', league:'Ligue 1', type:'home', name:{nl:'Olympique Marseille Thuisshirt',fr:'Maillot Domicile Olympique Marseille',en:'Olympique Marseille Home Shirt'}, desc:{nl:'Het witte thuisshirt van l\'OM.',fr:'Le maillot blanc de l\'OM.',en:'The white home shirt of l\'OM.'}, price:22.99, colors:['#FFFFFF','#009DDA'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — EREDIVISIE 🇳🇱
+  // ==========================================
+  { id:'aja-home', category:'club', country:'Netherlands', flag:'🇳🇱', club:'Ajax', league:'Eredivisie', type:'home', name:{nl:'Ajax Thuisshirt',fr:'Maillot Domicile Ajax',en:'Ajax Home Shirt'}, desc:{nl:'Het rood-witte thuisshirt van Ajax.',fr:'Le maillot rouge et blanc d\'Ajax.',en:'The red and white home shirt of Ajax.'}, price:22.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=500&fit=crop', badge:'bestseller', stock:99 },
+  { id:'aja-away', category:'club', country:'Netherlands', flag:'🇳🇱', club:'Ajax', league:'Eredivisie', type:'away', name:{nl:'Ajax Uitshirt',fr:'Maillot Extérieur Ajax',en:'Ajax Away Shirt'}, desc:{nl:'Het uitshirt van Ajax.',fr:'Le maillot extérieur d\'Ajax.',en:'The away shirt of Ajax.'}, price:21.99, colors:['#000000','#CC0000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'psv-home', category:'club', country:'Netherlands', flag:'🇳🇱', club:'PSV Eindhoven', league:'Eredivisie', type:'home', name:{nl:'PSV Thuisshirt',fr:'Maillot Domicile PSV',en:'PSV Home Shirt'}, desc:{nl:'Het rood-witte thuisshirt van PSV.',fr:'Le maillot rouge et blanc du PSV.',en:'The red and white shirt of PSV.'}, price:22.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — PRIMEIRA LIGA 🇵🇹
+  // ==========================================
+  { id:'ben-home', category:'club', country:'Portugal', flag:'🇵🇹', club:'SL Benfica', league:'Primeira Liga', type:'home', name:{nl:'Benfica Thuisshirt',fr:'Maillot Domicile Benfica',en:'Benfica Home Shirt'}, desc:{nl:'Het rode thuisshirt van de Águias.',fr:'Le maillot rouge des Águias.',en:'The red home shirt of the Águias.'}, price:22.99, colors:['#CC0000','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'por-fc-home', category:'club', country:'Portugal', flag:'🇵🇹', club:'FC Porto', league:'Primeira Liga', type:'home', name:{nl:'FC Porto Thuisshirt',fr:'Maillot Domicile FC Porto',en:'FC Porto Home Shirt'}, desc:{nl:'Het blauw-witte thuisshirt van FC Porto.',fr:'Le maillot bleu et blanc du FC Porto.',en:'The blue and white shirt of FC Porto.'}, price:22.99, colors:['#003DA5','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — BRASILEIRÃO 🇧🇷
+  // ==========================================
+  { id:'fla-home', category:'club', country:'Brazil', flag:'🇧🇷', club:'Flamengo', league:'Brasileirão', type:'home', name:{nl:'Flamengo Thuisshirt',fr:'Maillot Domicile Flamengo',en:'Flamengo Home Shirt'}, desc:{nl:'Het rood-zwarte thuisshirt van Flamengo.',fr:'Le maillot rouge et noir de Flamengo.',en:'The red and black home shirt of Flamengo.'}, price:22.99, colors:['#CC0000','#000000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=500&fit=crop', badge:null, stock:99 },
+  { id:'pal-home', category:'club', country:'Brazil', flag:'🇧🇷', club:'Palmeiras', league:'Brasileirão', type:'home', name:{nl:'Palmeiras Thuisshirt',fr:'Maillot Domicile Palmeiras',en:'Palmeiras Home Shirt'}, desc:{nl:'Het groene thuisshirt van Palmeiras.',fr:'Le maillot vert de Palmeiras.',en:'The green home shirt of Palmeiras.'}, price:22.99, colors:['#006600','#FFFFFF'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=500&fit=crop', badge:null, stock:99 },
+
+  // ==========================================
+  // CLUBS — MLS 🇺🇸
+  // ==========================================
+  { id:'int-mia-home', category:'club', country:'USA', flag:'🇺🇸', club:'Inter Miami CF', league:'MLS', type:'home', name:{nl:'Inter Miami Thuisshirt',fr:'Maillot Domicile Inter Miami',en:'Inter Miami Home Shirt'}, desc:{nl:'Het roze thuisshirt van Inter Miami.',fr:'Le maillot rose d\'Inter Miami.',en:'The pink home shirt of Inter Miami.'}, price:22.99, colors:['#F7B5CD','#000000'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=500&fit=crop', badge:'new', stock:99 },
+  { id:'la-galaxy-home', category:'club', country:'USA', flag:'🇺🇸', club:'LA Galaxy', league:'MLS', type:'home', name:{nl:'LA Galaxy Thuisshirt',fr:'Maillot Domicile LA Galaxy',en:'LA Galaxy Home Shirt'}, desc:{nl:'Het witte thuisshirt van LA Galaxy.',fr:'Le maillot blanc du LA Galaxy.',en:'The white home shirt of LA Galaxy.'}, price:22.99, colors:['#FFFFFF','#003087'], sizes:['S','M','L','XL','XXL'], image:'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=500&fit=crop', badge:null, stock:99 },
+
 ];
 
+// ==========================================
+// FILTERS & METADATA
+// ==========================================
+
 export const categories = [
-  { id: "all", label: { nl: "Alles", fr: "Tout", en: "All" } },
-  { id: "national", label: { nl: "Nationale Teams", fr: "Équipes Nationales", en: "National Teams" } },
-  { id: "club", label: { nl: "Clubs", fr: "Clubs", en: "Clubs" } }
+  { id:'all', label:{nl:'Alles',fr:'Tout',en:'All'} },
+  { id:'national', label:{nl:'Nationale Teams',fr:'Équipes Nationales',en:'National Teams'} },
+  { id:'club', label:{nl:'Clubs',fr:'Clubs',en:'Clubs'} },
+];
+
+export const shirtTypes = [
+  { id:'all', label:{nl:'Alle types',fr:'Tous types',en:'All types'} },
+  { id:'home', label:{nl:'Thuis',fr:'Domicile',en:'Home'} },
+  { id:'away', label:{nl:'Uit',fr:'Extérieur',en:'Away'} },
+  { id:'third', label:{nl:'Derde',fr:'Third',en:'Third'} },
+  { id:'concept', label:{nl:'Concept',fr:'Concept',en:'Concept'} },
+];
+
+export const leagues = [
+  { id:'all', label:'Alle competities' },
+  { id:'Jupiler Pro League', label:'🇧🇪 Jupiler Pro League' },
+  { id:'Premier League', label:'🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League' },
+  { id:'La Liga', label:'🇪🇸 La Liga' },
+  { id:'Bundesliga', label:'🇩🇪 Bundesliga' },
+  { id:'Serie A', label:'🇮🇹 Serie A' },
+  { id:'Ligue 1', label:'🇫🇷 Ligue 1' },
+  { id:'Eredivisie', label:'🇳🇱 Eredivisie' },
+  { id:'Primeira Liga', label:'🇵🇹 Primeira Liga' },
+  { id:'Brasileirão', label:'🇧🇷 Brasileirão' },
+  { id:'MLS', label:'🇺🇸 MLS' },
 ];
 
 export const countries = [
-  { id: "Belgium", label: "🇧🇪 België / Belgique" },
-  { id: "France", label: "🇫🇷 France" },
-  { id: "Netherlands", label: "🇳🇱 Nederland" },
-  { id: "Germany", label: "🇩🇪 Deutschland" },
-  { id: "Spain", label: "🇪🇸 España" },
-  { id: "England", label: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 England" },
-  { id: "Portugal", label: "🇵🇹 Portugal" },
-  { id: "Italy", label: "🇮🇹 Italia" }
+  { id:'Belgium', label:'🇧🇪 België' },
+  { id:'France', label:'🇫🇷 France' },
+  { id:'Netherlands', label:'🇳🇱 Nederland' },
+  { id:'Germany', label:'🇩🇪 Deutschland' },
+  { id:'Spain', label:'🇪🇸 España' },
+  { id:'England', label:'🏴󠁧󠁢󠁥󠁮󠁧󠁿 England' },
+  { id:'Portugal', label:'🇵🇹 Portugal' },
+  { id:'Italy', label:'🇮🇹 Italia' },
+  { id:'Brazil', label:'🇧🇷 Brasil' },
+  { id:'Argentina', label:'🇦🇷 Argentina' },
+  { id:'USA', label:'🇺🇸 USA' },
 ];
