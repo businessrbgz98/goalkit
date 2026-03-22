@@ -1,19 +1,21 @@
 import Link from 'next/link';
+import { useSession } from 'next-auth/react';
 import { useCartStore } from '../lib/store';
 import { translations } from '../data/translations';
 
 export default function Navbar() {
   const { lang, setLang, items } = useCartStore();
+  const { data: session } = useSession();
   const t = translations[lang];
   const itemCount = items.reduce((s, i) => s + i.quantity, 0);
 
   return (
     <nav style={{
       position: 'sticky', top: 0, zIndex: 100,
-      background: 'rgba(255,255,255,0.97)',
+      background: 'rgba(247,240,230,0.97)',
       backdropFilter: 'blur(10px)',
       borderBottom: '1px solid #e2d4c0',
-      boxShadow: '0 2px 20px rgba(107,16,32,0.06)',
+      boxShadow: '0 2px 20px rgba(107,16,32,0.08)',
     }}>
       <div className="container" style={{
         display: 'flex', alignItems: 'center',
@@ -22,7 +24,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
           <img
-            src="/logo.png"
+            src="/logo.jpeg"
             alt="GoalKit"
             style={{ height: 56, width: 'auto', objectFit: 'contain' }}
           />
@@ -34,6 +36,7 @@ export default function Navbar() {
             { href: '/', label: t.nav.home },
             { href: '/#shop', label: t.nav.shop },
             { href: '/#contact', label: t.nav.contact },
+            { href: '/custom-request', label: lang==='nl'?'Speciale Aanvraag':lang==='fr'?'Demande Spéciale':'Custom Request' },
           ].map(link => (
             <Link key={link.href} href={link.href}
               className="ui"
