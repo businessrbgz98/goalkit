@@ -1,6 +1,6 @@
-import { supabaseAdmin } from '../../../lib/supabase';
+import { supabaseAdmin } from '../../lib/supabase';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../auth/[...nextauth]';
+import { authOptions } from './auth/[...nextauth]';
 
 export const config = { api: { bodyParser: { sizeLimit: '10mb' } } };
 
