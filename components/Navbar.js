@@ -10,10 +10,10 @@ export default function Navbar() {
   return (
     <nav style={{
       position: 'sticky', top: 0, zIndex: 100,
-      background: 'rgba(247,240,230,0.97)',
+      background: 'rgba(255,255,255,0.97)',
       backdropFilter: 'blur(10px)',
       borderBottom: '1px solid #e2d4c0',
-      boxShadow: '0 2px 20px rgba(107,16,32,0.08)',
+      boxShadow: '0 2px 20px rgba(107,16,32,0.06)',
     }}>
       <div className="container" style={{
         display: 'flex', alignItems: 'center',
