@@ -31,7 +31,7 @@ export default function ProductPage({ product, related }) {
   const [imgError, setImgError] = useState(false);
 
   const name = product.name[lang];
-  const desc = product.description[lang];
+  const desc = (product.description || product.desc || {})[lang] || '';
 
   const handleAdd = () => {
     if (!selectedSize) {
